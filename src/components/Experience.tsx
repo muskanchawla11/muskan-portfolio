@@ -11,51 +11,30 @@ const Experience = () => {
 
   const experiences = [
     {
-      company: "Airtel",
-      role: "DevOps Engineer Intern",
-      period: "Jan 2025 - April 2025",
+      company: "DeepMind",
+      role: "AI Research Intern",
+      period: "June 2022 - Aug 2022",
       description:
-        "Architected and streamlined production-grade monitoring and data pipelines using ELK Stack, Kafka, Zabbix, and Python on Linux, collaborating in agile sprints with twice-weekly scrum meetings.",
+        "Conducted research on reinforcement learning algorithms for robotics in London, UK, contributing to the lab's deep RL research initiatives.",
       achievements: [
-        "Led the migration of 25+ production data pipelines from Redis to Kafka, improving real-time data throughput by 40%.",
-        "Configured 10+ Logstash pipelines to transform and enrich log data using Grok and Mutate filters.",
-        "Built and deployed a production-grade anomaly detection system for network traffic metrics using Python, Holt-Winters forecasting, and scikit-learn, reducing incident detection time by 60%.",
-        "Enabled real-time anomaly alerts via Zabbix by comparing forecasted vs. observed values, enhancing monitoring accuracy and uptime.",
-        "Automated OS patching for 50+ Linux servers using Red Hat Satellite, ensuring consistent monthly updates and reducing manual effort by approximately 80%.",
-        "Provisioned a five-node Kafka cluster on Linux environments to evaluate its capacity for managing production-scale data, ensuring scalability and fault tolerance.",
+        "Conducted research on reinforcement learning algorithms for robotics.",
+        "Implemented and evaluated deep RL models using PyTorch and RLlib.",
+        "Presented findings at weekly research meetings.",
       ],
       color: "border-primary-500 dark:border-primary-400",
     },
     {
-      company: "Zemoso",
-      role: "Fullstack Developer Intern",
-      period: "Aug 2024 - Nov 2024",
+      company: "Acme AI Solutions",
+      role: "Machine Learning Engineer",
+      period: "Jan 2021 - May 2022",
       description:
-        "Developed full-stack web applications using React, Node.js, and MongoDB while actively participating in daily scrum meetings within an agile team.",
+        "Developed and deployed machine learning models for various industries based in San Francisco, CA, partnering with cross-functional teams to deliver production AI solutions.",
       achievements: [
-        "Crafted a responsive e-commerce UI using Material UI and integrated RESTful APIs to display real-time product and cart data.",
-        "Leveraged pagination to reduce API payload size by over 90%, and integrated detailed error handling and input validation to enhance system stability and user experience.",
-        "Introduced a debouncing mechanism to optimize product search functionality, reducing unnecessary API calls by over 70%.",
-        "Implemented persistent user login, cart handling, and dynamic order summary section by using session storage and cookies.",
-        "Integrated MongoDB to store and manage product catalog and order details, enabling efficient querying and scalability of data operations.",
+        "Developed and deployed machine learning models for various industries.",
+        "Optimized model performance and ensured data quality.",
+        "Collaborated with cross-functional teams to deliver AI solutions.",
       ],
       color: "border-secondary-500 dark:border-secondary-400",
-    },
-    {
-      company: "MTX",
-      role: "Salesforce Developer Intern",
-      period: "Jan 2022 - June 2022",
-      description:
-        "Collaborated in an agile team to develop end-to-end CRM features on Salesforce, enhancing user experience and process automation.",
-      achievements: [
-        "Devised a banking environment with security implementations using the Salesforce CRM platform.",
-        "Streamlined customer workflows by automating welcome emails, transaction alerts, and birthday greetings via Process Builder, reducing manual effort by approximately 80%.",
-        "Automated a multi-step approval process for records that users can accept, deny, or recall.",
-        "Engineered Apex Triggers to handle dynamic record validation, updates, and cascading changes across 4+ related Salesforce objects.",
-        "Created custom Salesforce reports to extract and analyze account and contact data based on dynamic, criteria-driven filters.",
-        "Built interactive Salesforce dashboards to visualize multi-account relationships and contact-level metrics, improving data interpretation for internal users.",
-      ],
-      color: "border-accent-500 dark:border-accent-400",
     },
   ];
 

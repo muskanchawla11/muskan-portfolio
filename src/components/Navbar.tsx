@@ -92,7 +92,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="bg-gradient-to-r from-primary-600 to-purple-600 dark:from-primary-400 dark:to-purple-400 bg-clip-text text-transparent">
-              This is Anshuman
+              This is Muskan
             </span>
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-600 to-purple-600 dark:from-primary-400 dark:to-purple-400 transition-all duration-300 group-hover:w-full"></span>
           </motion.a>

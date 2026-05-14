@@ -198,6 +198,50 @@ const projects: Project[] = [
     github: "https://github.com/Anshu0707/dine-mate",
     category: ["All"],
   },
+  {
+    id: 11,
+    title: "Real-Time Multiplayer Drawing & Guessing Platform",
+    description:
+      "A real-time multiplayer platform enabling synchronized drawing, live guessing, scoring, and room-based gameplay through WebSocket-driven event architecture. Features server-authoritative game state with room lifecycle control, player rotation, reconnect handling, and low-latency event synchronization — alongside secure authentication, payload validation, anti-spam throttling, and scalable multiplayer session workflows.",
+    image: "/portfolio.png",
+    tags: [
+      "NestJS",
+      "Node.js",
+      "WebSockets",
+      "PostgreSQL",
+      "JWT",
+      "Redis",
+      "Real-time",
+      "Multiplayer",
+      "Game State",
+      "Authentication",
+    ],
+    demo: "#",
+    github: "#",
+    category: ["All", "Backend"],
+  },
+  {
+    id: 12,
+    title: "Containerized Deployment Automation Platform (Vercel Lite)",
+    description:
+      "A deployment automation platform supporting repository/ZIP ingestion, isolated builds, deployment lifecycle orchestration, and hosted static asset delivery. Built with asynchronous queue-based pipelines, worker processing, retry systems, timeout controls, Dockerized build isolation, artifact versioning, secure execution workflows, and rollback-ready deployment infrastructure.",
+    image: "/portfolio.png",
+    tags: [
+      "NestJS",
+      "Docker",
+      "BullMQ",
+      "Redis",
+      "PostgreSQL",
+      "Cloud Storage",
+      "CI/CD",
+      "Queue Processing",
+      "Build Isolation",
+      "Deployment",
+    ],
+    demo: "#",
+    github: "#",
+    category: ["All", "Backend"],
+  },
 ];
 
 export default projects;

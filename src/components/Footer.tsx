@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <h3 className="text-xl font-bold mb-4 text-primary-600 dark:text-primary-400 font-mono tracking-tight relative group">
               <span className="bg-gradient-to-r from-primary-600 to-purple-600 dark:from-primary-400 dark:to-purple-400 bg-clip-text text-transparent">
-                Anshuman Naithani
+                Muskan Chawla
               </span>
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-xs">
@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
             <motion.a
               href="/Resume.pdf"
-              download="anshuman-naithani-resume.pdf"
+              download="muskan-chawla-resume.pdf"
               className="inline-flex items-center text-primary-600 dark:text-primary-400 font-medium hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
               whileHover={{ x: 5 }}
             >
@@ -88,10 +88,10 @@ const Footer = () => {
                   />
                 </svg>
                 <a
-                  href="mailto:anshumannaithani7@gmail.com"
+                  href="mailto:muskanchawla115@gmail.com"
                   className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                 >
-                  anshumannaithani7@gmail.com
+                  muskanchawla115@gmail.com
                 </a>
               </li>
               <li className="flex items-start">
@@ -110,10 +110,10 @@ const Footer = () => {
                   />
                 </svg>
                 <a
-                  href="tel:+91-7895411185"
+                  href="tel:+91-9306129112"
                   className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                 >
-                  +91 7895411185
+                  +91 9306129112
                 </a>
               </li>
               <li className="flex items-start">
@@ -138,7 +138,7 @@ const Footer = () => {
                   />
                 </svg>
                 <span className="text-gray-600 dark:text-gray-300">
-                  Uttarakhand, India
+                  Punjab, India
                 </span>
               </li>
             </ul>
@@ -147,7 +147,7 @@ const Footer = () => {
 
         <div className="pt-8 mt-8 border-t border-gray-200 dark:border-gray-800 text-center">
           <p className="text-gray-600 dark:text-gray-400 flex items-center justify-center">
-            © {currentYear} Anshuman Naithani
+            © {currentYear} Muskan Chawla
           </p>
         </div>
       </div>

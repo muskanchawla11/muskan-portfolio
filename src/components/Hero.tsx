@@ -13,18 +13,18 @@ const Hero = () => {
             className="order-2 md:order-1"
           >
             <span className="inline-block px-3 py-1 mb-4 text-sm font-medium text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/30 rounded-full">
-              Fullstack Developer
+              Backend Software Engineer
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-gray-900 dark:text-white">
               Hi, I'm{" "}
               <span className="text-primary-600 dark:text-primary-400">
-                Anshuman Naithani
+                Muskan Chawla
               </span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              Building the interactive face of the web. Explore my portfolio to
-              see how I bring designs to life with clean code and a focus on
-              user engagement.{" "}
+              Building scalable, production-grade backend systems with Node.js,
+              NestJS, TypeScript, and PostgreSQL. Explore my work in real-time
+              architectures, secure APIs, and deployment automation.{" "}
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -39,7 +39,7 @@ const Hero = () => {
 
               <motion.a
                 href="/Resume.pdf"
-                download="anshuman-naithani-resume.pdf"
+                download="muskan-chawla-resume.pdf"
                 className="px-6 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 font-medium rounded-lg flex items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}

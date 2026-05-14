@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import SectionHeading from "./SectionHeading";
+import {
+  Code2,
+  Server,
+  Database,
+  Wrench,
+  Brain,
+} from "lucide-react";
 
 const Skills = () => {
   const [ref, inView] = useInView({
@@ -8,27 +15,60 @@ const Skills = () => {
     threshold: 0.1,
   });
 
-  const skills = [
-    { name: "HTML", image: "/images/skills/html.png" },
-    { name: "CSS", image: "/images/skills/css.png" },
-    { name: "JavaScript", image: "/images/skills/js.png" },
-    { name: "TypeScript", image: "/images/skills/ts.png" },
-    { name: "React", image: "/images/skills/react.png" },
-    { name: "Next.js", image: "/images/skills/nextjs.png" },
-    { name: "Material UI", image: "/images/skills/materialui.png" },
-    { name: "Tailwind CSS", image: "/images/skills/tailwind.png" },
-    { name: "Java", image: "/images/skills/java.png" },
-    { name: "Spring", image: "/images/skills/Springboot.png" },
-    { name: "Node.js", image: "/images/skills/node.png" },
-    { name: "Express", image: "/images/skills/express-js.png" },
-    { name: "Python", image: "/images/skills/Python.png" },
-    { name: "MongoDB", image: "/images/skills/mongo.png" },
-    { name: "MySql", image: "/images/skills/MySql.png" },
-    { name: "Salesforce", image: "/images/skills/Salesforce.png" },
-    { name: "Kafka", image: "/images/skills/Kafka.png" },
-    { name: "ELK", image: "/images/skills/elastic.png" },
-    { name: "Zabbix", image: "/images/skills/Zabbix.png" },
-    { name: "Linux", image: "/images/skills/Linux.png" },
+  const skillCategories = [
+    {
+      title: "Programming Languages",
+      icon: <Code2 size={22} />,
+      color:
+        "bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
+      skills: ["JavaScript (ES6+)", "TypeScript", "SQL"],
+    },
+    {
+      title: "Backend Development",
+      icon: <Server size={22} />,
+      color:
+        "bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400",
+      skills: [
+        "Node.js",
+        "NestJS",
+        "REST APIs",
+        "WebSockets",
+        "JWT Authentication",
+        "API Security",
+      ],
+    },
+    {
+      title: "Databases & Caching",
+      icon: <Database size={22} />,
+      color:
+        "bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400",
+      skills: [
+        "PostgreSQL",
+        "Redis",
+        "Database Design",
+        "Query Optimization",
+      ],
+    },
+    {
+      title: "DevOps & Tools",
+      icon: <Wrench size={22} />,
+      color:
+        "bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400",
+      skills: ["Docker", "Git", "GitHub", "Postman", "CI/CD Basics"],
+    },
+    {
+      title: "Core Concepts",
+      icon: <Brain size={22} />,
+      color:
+        "bg-yellow-50 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400",
+      skills: [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming",
+        "System Design",
+        "Scalability",
+        "Asynchronous Architecture",
+      ],
+    },
   ];
 
   const containerVariants = {
@@ -61,7 +101,7 @@ const Skills = () => {
       <div className="container mx-auto max-w-6xl">
         <SectionHeading
           title="Skills & Technologies"
-          subtitle="Technologies I Work With"
+          subtitle="Technologies I work with"
         />
 
         <motion.div
@@ -69,34 +109,38 @@ const Skills = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"
+          className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6"
         >
-          {skills.map((skill) => (
+          {skillCategories.map((category) => (
             <motion.div
-              key={skill.name}
+              key={category.title}
               variants={itemVariants}
-              className="group relative bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4
+              className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6
                 hover:border-primary-500/50 dark:hover:border-primary-400/50 transition-all duration-300 shadow-sm
                 hover:shadow-md dark:shadow-gray-900/20 dark:hover:shadow-gray-900/30"
             >
-              <div className="flex items-center justify-between">
-                <span className="text-gray-800 dark:text-white font-medium">
-                  {skill.name}
-                </span>
-                <img
-                  src={skill.image}
-                  alt={skill.name}
-                  className="w-6 h-6 opacity-60 group-hover:opacity-100 
-                    transition-opacity duration-300"
-                />
+              <div className="flex items-center mb-4">
+                <div className={`p-2 rounded-lg mr-3 ${category.color}`}>
+                  {category.icon}
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                  {category.title}
+                </h3>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
             </motion.div>
           ))}
         </motion.div>
-
-        <p className="mt-8 text-center text-gray-400">
-          + Other modern frontend libraries
-        </p>
       </div>
     </section>
   );

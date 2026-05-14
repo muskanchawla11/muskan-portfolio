@@ -24,44 +24,30 @@ const About = () => {
   const stats = [
     {
       icon: <Code size={22} />,
-      value: "1+",
-      label: "Years Experience",
+      value: "Backend",
+      label: "Specialization",
       color: "bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
     },
     {
       icon: <Briefcase size={22} />,
-      value: "5+",
-      label: "Projects Completed",
+      value: "2+",
+      label: "Projects Built",
       color:
         "bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400",
     },
     {
       icon: <GraduationCap size={22} />,
-      value: "B Tech",
-      label: "Graduate",
+      value: "B.E. CSE",
+      label: "Chitkara University",
       color:
         "bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400",
     },
     {
-      icon: <HeartHandshake size={22} />, // Or another relevant icon
-      value: "3",
-      label: "Industry Internship Completed",
+      icon: <HeartHandshake size={22} />,
+      value: "2",
+      label: "Industry Internships",
       color: "bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400",
     },
-    {
-      icon: <Code size={22} />, // you can use `TerminalSquare`, `ListOrdered`, or any other DSA-related icon
-      value: "400+",
-      label: "DSA problems on LeetCode",
-      color:
-        "bg-yellow-50 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400",
-    },
-
-    // {
-    //   icon: <Globe size={22} />,
-    //   value: '10+',
-    //   label: 'Countries Visited',
-    //   color: 'bg-amber-50 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400'
-    // },
   ];
 
   return (
@@ -84,11 +70,11 @@ const About = () => {
             ref={ref}
           >
             <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-primary-200/30 dark:bg-primary-900/20 rounded-lg"></div>
-            <img
-              src="/images/mine/About.JPG"
-              alt="About"
-              className="rounded-lg shadow-lg relative z-10 w-full h-auto"
-            />
+            <div className="rounded-lg shadow-lg relative z-10 w-full aspect-square bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 flex items-center justify-center">
+              <span className="text-gray-500 dark:text-gray-400 text-sm font-medium">
+                Photo coming soon
+              </span>
+            </div>
           </motion.div>
 
           <motion.div
@@ -101,24 +87,20 @@ const About = () => {
             </h3>
 
             <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-              I'm a passionate frontend developer based in the foothills of
-              Dehradun, bringing 1+ years of experience in building modern,
-              responsive web applications. I specialize in creating
-              pixel-perfect UIs and seamless user experiences using React,
-              TypeScript, and cutting-edge web technologies. My approach to
-              development blends technical precision with creative
-              problem-solving.
+              I'm a backend-focused software engineer pursuing my B.E. in
+              Computer Science at Chitkara University, Punjab. I specialize in
+              building scalable, production-oriented systems with Node.js,
+              NestJS, TypeScript, and PostgreSQL — with a strong focus on
+              real-time architectures, secure APIs, and deployment-ready
+              backend workflows.
             </p>
 
             <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-              My journey in web development began with a fascination for
-              transforming ideas into interactive realities. I'm constantly
-              expanding my skills, staying at the forefront of frontend
-              innovation. When I'm not immersed in code, you'll find me
-              strumming my guitar, composing melodies, or exploring the
-              intersection of music and technology. This creative outlet fuels
-              my passion for crafting harmonious digital experiences that
-              resonate with users.
+              My passion lies in engineering reliable software systems and
+              solving complex technical challenges. I enjoy strengthening core
+              computer science fundamentals through data structures,
+              algorithms, and system design — and applying them to build
+              performant, asynchronous backend infrastructure that scales.
             </p>
             <div className="grid grid-cols-2 gap-4">
               {stats.map((stat, index) => (
