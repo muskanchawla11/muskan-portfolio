@@ -22,7 +22,7 @@ const projects: Project[] = [
       "Web Application"
     ],
     demo: "https://spendly-scsi.onrender.com/",
-    github: "https://github.com/Anshu0707/spendly",
+    github: "https://github.com/muskanchawla11/spendly",
     category: ["All", "Java"],
   },
   {
@@ -33,7 +33,7 @@ const projects: Project[] = [
     image: "/images/projects/flow-ops.png",
     tags: ["AI", "React", "Node-Based", "Workflow", "React Flow", "Zustand", "Tailwind CSS", "Python", "FastAPI", "Web Application", "Atomic Design", "Abstraction"],
     demo: "https://flowops-hu9f.onrender.com/",
-    github: "https://github.com/Anshu0707/flowOps",
+    github: "https://github.com/muskanchawla11/flowops",
     category: ["All", "Python"],
   }, {
     id: 3,
@@ -80,7 +80,7 @@ const projects: Project[] = [
       "SendGrid",
     ],
     demo: "https://e-sales.onrender.com/",
-    github: "https://github.com/Anshu0707/e-Sales",
+    github: "https://github.com/muskanchawla11/e-sales",
     category: ["All", "MERN"],
   },
     {
@@ -102,7 +102,7 @@ const projects: Project[] = [
     image: "/images/projects/interview-generator.png",
     tags: ["React", "Material UI", "Framer Motion", "React Particles", "CohereAI", "OpenAI", "Express", "CORS"],
     demo: "https://interview-master-9s7b.onrender.com/",
-    github: "https://github.com/Anshu0707/interview-generator",
+    github: "https://github.com/muskanchawla11/interview-generator",
     category: ["All", "MERN"],
   }
  ,
@@ -173,7 +173,7 @@ const projects: Project[] = [
 ]
 ,
     demo: "https://anshuman-weather-app.netlify.app/",
-    github: "https://github.com/Anshu0707/forecastly",
+    github: "https://github.com/muskanchawla11/forecastly",
     category: ["All", "MERN"],
   },
   {
