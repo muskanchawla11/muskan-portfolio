@@ -91,7 +91,7 @@ const projects: Project[] = [
     image: "/images/projects/solar-system.png",
     tags: ["React", "Three.js", "React-Three-Fibre", "Vite", "Tailwind CSS", "Space", "Javascript"],
     demo: "https://anshuman-solarsystem.netlify.app/",
-    github: "https://github.com/Anshu0707/solar-system",
+    github: "https://github.com/muskanchawla11/solar-system",
     category: ["All"],
   },
   {
