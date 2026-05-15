@@ -101,8 +101,8 @@ const projects: Project[] = [
   "Data Science",
 ]
 ,
-    demo: "https://github.com/Anshu0707/movie-recommender",
-    github: "https://github.com/Anshu0707/movie-recommender",
+    demo: "https://github.com/muskanchawla11/movie-recommender",
+    github: "https://github.com/muskanchawla11/movie-recommender",
     category: ["All", "Python"],
   },
     {
