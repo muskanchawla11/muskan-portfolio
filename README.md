@@ -69,4 +69,4 @@ npm run lint
 
 ## Contact
 
-For any inquiries, please contact [anshumannaithani7@gmail.com].
+For any inquiries, please contact [muskanchawla115@gmail.com].
