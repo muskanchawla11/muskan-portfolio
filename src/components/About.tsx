@@ -61,26 +61,12 @@ const About = () => {
           subtitle="Get to know more about me and my background"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-4xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6 }}
-            className="relative"
             ref={ref}
-          >
-            <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-primary-200/30 dark:bg-primary-900/20 rounded-lg"></div>
-            <div className="rounded-lg shadow-lg relative z-10 w-full aspect-square bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 flex items-center justify-center">
-              <span className="text-gray-500 dark:text-gray-400 text-sm font-medium">
-                Photo coming soon
-              </span>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
               Crafting Digital Experiences with Code & Creativity
@@ -102,7 +88,7 @@ const About = () => {
               algorithms, and system design — and applying them to build
               performant, asynchronous backend infrastructure that scales.
             </p>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {stats.map((stat, index) => (
                 <motion.div
                   key={stat.label}
